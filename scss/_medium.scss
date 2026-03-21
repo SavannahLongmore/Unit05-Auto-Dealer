@@ -1,0 +1,66 @@
+header {
+    padding: 2rem $gutter;
+    h1 {font-size: 2rem;}
+}
+
+ section {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1000px){
+
+ .carousel3{
+    padding: 0 64px; 
+  }
+
+  /* notes: Show 2 cards per view */
+  .track{
+    grid-auto-columns: calc((100% - 20px) / 2);
+    gap: 20px;
+  }
+
+  
+  .slide img{
+    height: 210px;
+  }
+
+  
+  .slide h3{
+    font-size: 1.12rem;
+    margin: 16px 16px 8px;
+  }
+
+  .slide p{
+    font-size: .95rem;
+    margin: 0 16px 16px;
+  }
+
+  .slide a{
+    margin: 0 16px 16px;
+    padding: 11px;
+  }
+
+  /* notes: Medium-sized arrows */
+  .carousel3 .arrow{
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+}
+.featurePanel{
+    display: none;
+  }
+
+  .featureMobile{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 26px 20px;
+    text-align: center;
+    color: #EAE6E3;
+  }
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}

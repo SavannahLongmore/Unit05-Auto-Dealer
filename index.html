@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>State File | A Front End Developer </title>
+    <meta name="description" content="Savannah Longmore's Sample Start File with SCSS">
+    <meta name="author" content="Savannah Longmore">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/favicon.png" alt="logo" width="40" height="40" class="logo">
+            <h1 class="logo">
+  A<span class="small">STRA</span><span class="q">Q</span>
+</h1>
+               <a class="phone" href="tel:18015551234">
+
+    <span class="phone-text">(801) 555-1234</span>
+
+    <svg class="phone-icon" viewBox="0 0 24 24" width="22" height="22">
+      <path fill="white"
+      d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.2-2.2c.3-.3.7-.4
+      1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4
+      1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.3c.6
+      0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3
+      1.1l-2 2.9z"/>
+    </svg>
+
+  </a>
+            <button class="navToggle" id="navOpen" aria-controls="mobileNav" aria-expanded="false">
+  <span class="srOnly">Open menu</span>
+  &#9776;
+</button>
+        </header>
+        <div class="navOverlay" id="navOverlay" hidden></div>
+
+<nav class="mobileNav" id="mobileNav" aria-hidden="true">
+  <div class="mobileNavTop">
+    <button class="navClose" id="navClose" aria-label="Close menu">&times;</button>
+  </div>
+
+  <ul class="mobileNavList">
+    <li><a href="#">WELCOME</a></li>
+    <li><a href="#">VEHICLES</a></li>
+    <li><a href="#">EXPERIENCES</a></li>
+    <li><a href="#">SERVICES</a></li>
+    <li><a href="#">ABOUT US</a></li>
+
+  </ul>
+</nav>
+    </div> 
+    <div id="navWrapper">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">WELCOME</a></li>
+                <li><a href="#">VEHICLES</a></li>
+                <li><a href="#">EXPERIENCES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>   
+            </ul>
+        </nav>
+    </div>
+    <div id="mainWrapper">
+        <main>
+            <!--<picture class="hero">
+       <source media="(min-width: 300px) and (max-width: 699px)" srcset="images/hero-small.webp" 
+       <source media="(min-width: 700px) and (max-width: 1099px)" srcset="images/hero-medium.webp"
+       <source media="(min-width: 1100px) and (max-width: 1500px)" srcset="images/hero-large.webp"
+       <img src="images/hero-default.webp" alt="#" width="16" height="9">
+    </picture>-->
+    <!--
+            <h1>Learn</h1>
+            <div class="allcards">
+              <section>
+                <h2>HTML</h2>
+                <img src="images/skill-html.webp" alt="html" width="300" height="175">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+                
+              <section>
+                <h2>CSS</h2>
+                <img src="images/skill-css.webp" alt="html" width="300" height="175" class="e2e">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+              
+              <section>
+                <h2>JAVASCRIPT</h2>
+                <img src="images/skill-javascript.webp" alt="html" width="300" height="175" >
+                <h2>JAVASCRIPT</h2>
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+
+              <section>
+                <img src="images/rsponsive.webp" alt="html" width="300" height="175" class="e2e">
+                <h2>Responsive Design</h2>
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+
+              <section>
+                <img src="images/skill-sass.webp" alt="html" width="300" height="175">
+                <p>HTML stands for hYper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
+                <a href="#">Learn More</a>
+              </section>
+                -->
+
+
+
+            <!-- right after the navigation. 
+                <div id="mainWrapper"
+                <main>
+                  <div class="parentHero"
+                  <img src="image/hero.webp" width="" height="" alt=""
+                </div> -->
+<section class="hero">
+  <picture class="heroMedia">
+    <source media="(max-width: 700px)" srcset="images/car-hero_small.webp">
+    <source media="(max-width: 1100px)" srcset="images/car-hero_medium.webp">
+    <img
+      src="images/hero.webp"
+      alt="Luxury futuristic vehicles in a dramatic showroom"
+      loading="eager"
+      fetchpriority="high"
+    >
+  </picture>
+
+  <div class="heroOverlay">
+    <p class="heroEyebrow">Luxury. Intelligence. Motion.</p>
+    <h1>Drive the Future with AstraQ</h1>
+    <p class="heroText">
+      Discover electric, self-diagnosing vehicles with immersive technology and elevated design.
+    </p>
+    <a href="#" class="heroBtn">Explore Vehicles</a>
+  </div>
+</section>
+</main>
+</div>
+<!-----------------------------------------------------
+                 This is where the carousel starts
+------------------------------------------------------->
+<!--<section class="carouselWrap">
+<div class="carousel3">
+  <button class="arrow left" data-dir="-1">&#10094;</button>
+
+  <div class="track">
+
+    <section class="slide">
+      <img src="images/dinerfood_1.webp" alt="Carbonara" loading="lazy">
+      <div class="cardContent">
+        <h3>Carbonara</h3>
+        <p>Classic Roman pasta with egg, pecorino cheese, and guanciale.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_10.webp" alt="Saffron Risotto" loading="lazy">
+      <div class="cardContent">
+        <h3>Saffron Risotto</h3>
+        <p>Creamy Milanese risotto finished with parmesan.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_9.webp" alt="Margherita Pizza" loading="lazy">
+      <div class="cardContent">
+        <h3>Margherita Pizza</h3>
+        <p>Wood-fired pizza with tomato, mozzarella, and fresh basil.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_6.webp" alt="Pasta Dish" loading="lazy">
+      <div class="cardContent">
+        <h3>House Pasta</h3>
+        <p>Fresh pasta served with a seasonal chef’s sauce.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="images/dinerfood_5.webp" alt="Pizza Close-up" loading="lazy">
+      <div class="cardContent">
+        <h3>Signature Pizza</h3>
+        <p>Hand-stretched dough, slow-simmered sauce, fresh herbs.</p>
+        <a href="#">View Dish</a>
+      </div>
+    </section>
+  </div>
+
+   <button class="arrow right" data-dir="1">&#10095;</button>
+</div>
+</section>-->
+<!-----------------------------------------------------
+                 This is where the carousel ends
+------------------------------------------------------->
+<section class="featureSection">
+  <p class="featureEyebrow"></p>
+  <h2>Engineered for a Smarter Drive</h2>
+  <p class="featureIntro">
+    AstraQ combines immersive technology, intelligent systems, and refined electric performance to create a luxury driving experience built for the future.
+  </p>
+
+  <div class="featureCards">
+    <article class="featureCard featureCard--ar">
+      <div class="featureIcon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 369 281.81" aria-hidden="true">
+          <polyline points="359 231.43 359 269 326.38 269" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+          <polyline points="326.38 10 359 10 359 49.67" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+          <polyline points="46.17 269 10 269 10 232.69" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+          <polyline points="10 49.67 10 10 50.58 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+
+          <polyline points="359 231.43 359 269 326.38 269" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+          <polyline points="326.38 10 359 10 359 49.67" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+          <polyline points="46.17 269 10 269 10 232.69" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+          <polyline points="10 49.67 10 10 50.58 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+
+          <g>
+            <path d="M153.39,190.58l-6.84-17.97h-58.2l-6.84,18.36c-2.67,7.16-4.95,12-6.84,14.5-1.89,2.51-4.98,3.76-9.28,3.76-3.65,0-6.87-1.33-9.67-4-2.8-2.67-4.2-5.7-4.2-9.08,0-1.95.33-3.97.98-6.05.65-2.08,1.72-4.98,3.22-8.69l36.62-92.97c1.04-2.67,2.29-5.88,3.76-9.62,1.46-3.74,3.03-6.85,4.69-9.33,1.66-2.47,3.84-4.48,6.54-6.01,2.7-1.53,6.04-2.29,10.01-2.29s7.41.77,10.11,2.29c2.7,1.53,4.88,3.5,6.54,5.91,1.66,2.41,3.06,5,4.2,7.76,1.14,2.77,2.59,6.46,4.35,11.08l37.4,92.38c2.93,7.03,4.39,12.14,4.39,15.33s-1.38,6.36-4.15,9.13c-2.77,2.77-6.1,4.15-10.01,4.15-2.28,0-4.23-.41-5.86-1.22-1.63-.81-3-1.92-4.1-3.32-1.11-1.4-2.29-3.55-3.56-6.45-1.27-2.9-2.36-5.45-3.27-7.67ZM95.97,150.83h42.77l-21.58-59.08-21.19,59.08Z" fill="currentColor" stroke="currentColor"/>
+            <path d="M244.6,145.56h-10.16v46c0,6.05-1.33,10.51-4,13.38-2.67,2.86-6.15,4.3-10.45,4.3-4.62,0-8.2-1.5-10.74-4.49s-3.81-7.39-3.81-13.18v-110.16c0-6.25,1.4-10.77,4.2-13.57s7.32-4.2,13.57-4.2h47.17c6.51,0,12.08.28,16.7.83,4.62.55,8.79,1.68,12.5,3.37,4.49,1.89,8.46,4.59,11.91,8.11,3.45,3.52,6.07,7.6,7.86,12.26,1.79,4.66,2.69,9.59,2.69,14.79,0,10.68-3.01,19.21-9.03,25.59-6.02,6.38-15.15,10.91-27.39,13.57,5.14,2.73,10.06,6.77,14.75,12.11,4.69,5.34,8.87,11.02,12.55,17.04,3.68,6.02,6.54,11.46,8.59,16.31,2.05,4.85,3.08,8.19,3.08,10.01s-.6,3.76-1.81,5.62c-1.21,1.86-2.85,3.32-4.93,4.39-2.08,1.07-4.49,1.61-7.23,1.61-3.26,0-5.99-.77-8.2-2.29-2.21-1.53-4.12-3.47-5.71-5.81-1.6-2.34-3.76-5.79-6.49-10.35l-11.62-19.34c-4.17-7.1-7.89-12.5-11.18-16.21-3.29-3.71-6.62-6.25-10.01-7.62-3.39-1.37-7.65-2.05-12.79-2.05ZM261.2,85.4h-26.76v39.36h25.98c6.97,0,12.83-.6,17.58-1.81,4.75-1.2,8.38-3.25,10.89-6.15,2.51-2.9,3.76-6.88,3.76-11.96,0-3.97-1.01-7.47-3.03-10.5-2.02-3.03-4.82-5.29-8.4-6.79-3.39-1.43-10.06-2.15-20.02-2.15Z" fill="currentColor" stroke="currentColor"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Augmented Reality</h3>
+      <p>
+        AstraQ’s augmented reality interface brings essential driving information directly into view, creating a more intuitive and immersive experience behind the wheel. By combining guidance, awareness, and live system feedback in one seamless display, it helps drivers feel more connected and in control.
+      </p>
+      <a href="#" class="featureLink">Learn More</a>
+    </article>
+
+    <article class="featureCard featureCard--electric">
+      <div class="featureIcon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.44 388.16" aria-hidden="true">
+          <polygon
+            points="343.95 5.12 290.61 92.78 322.66 94.03 308.89 164.4 363.48 71.99 331.18 71.49 343.95 5.12"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-miterlimit="10"
+          />
+          <g>
+            <path
+              d="M157.89,376.68C73.49,359.41,10,284.73,10,195.22,10,92.93,92.93,10,195.22,10c36.28,0,70.12,10.43,98.69,28.45"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="20"
+            />
+            <path
+              d="M365.25,121.64c9.77,22.55,15.19,47.43,15.19,73.58,0,102.29-87.08,182.94-189.37,182.94"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="20"
+            />
+            <line
+              x1="157.26"
+              y1="173.31"
+              x2="157.26"
+              y2="106.95"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="15"
+            />
+            <line
+              x1="217.35"
+              y1="171.59"
+              x2="217.35"
+              y2="105.22"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="15"
+            />
+            <path
+              d="M129.78,179.15c-2.74-11.1,114.9-8.35,114.9-8.35,0,0-2.44,72.45-3.33,96.59-.51,13.86-1.21,30.8-34.95,43.09-9.22,3.36-38.33,1.53-38.33,1.53,0,0-26.1-21.37-29.74-30.43-7.1-17.68-7.35-27-7.88-36.27-.6-10.49,0-42.05,0-42.05l-.67-24.12Z"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M188.22,378.16c0-19.28-1.32-64.72-1.32-64.72,0,0,12.39,3.26,33.18-10.05,16.2-10.37,25.09-19.48,25.09-39.38,0-57.41-.49-93.22-.49-93.22l-114.91,3.3s-1.49,73.83,3.28,97.83c2.74,13.77,8.66,21.7,22.34,31.14,10.65,7.35,31.26,11.21,31.26,11.21"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="15"
+            />
+          </g>
+        </svg>
+      </div>
+      <h3>Electric Performance</h3>
+      <p>
+        AstraQ’s electric system is designed to deliver both efficiency and refinement, combining sustainable innovation with smooth, responsive power. It offers a quieter, cleaner drive while maintaining the elevated performance expected from a luxury automotive experience.
+      </p>
+      <a href="#" class="featureLink">Learn More</a>
+    </article>
+
+    <article class="featureCard featureCard--safety">
+      <div class="featureIcon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357.84 408.37" aria-hidden="true">
+          <path d="M352.67,259.07c-7.15-14.31-20.66-20.76-28.64-34.96-8.24-14.66-31.95-69.37-41.86-77.28-8.71-6.95-55.38-9.48-74.06-10.23-38.02-1.52-100.16,4.49-100.16,4.49,0,0-28.07.95-32.95,6.26-15.94,17.37-27.82,58.19-39.81,75.96-7.67,11.37-28.96,28.12-33.63,43.36-4.09,13.33,4.86,47.81,4.86,66.79,0,22.06-5.4,62.24,3.59,71.24,3.27,3.27,38.18,4.2,41.56.04,5.21-6.42,4.3-32.76,4.3-32.76,0,0,73.86,3.91,134.36,3.91,28.5,0,111.9-4.74,111.9-4.74,0,0-2.37,28.57,4.16,33.49,5.88,4.43,41.11,5.3,44.9-3.64,3.37-7.95,2.98-30.59,1.66-51.68-3-48.04,11.6-66.66-.19-90.24ZM89.03,163.64c6.88-5.89,67.39-9.1,90.32-9.31,22.01-.2,81.82,3.88,89.07,9.01,7.6,5.38,24.02,46.71,24.02,46.71,0,0-85.13-3.66-113.52-3.54-28.44.11-113.66,4.46-113.66,4.46,0,0,15.83-40.53,23.76-47.32ZM47.32,296.44c-11.74,0-21.25-8.95-21.25-20s9.51-20,21.25-20,21.25,8.95,21.25,20-9.51,20-21.25,20ZM176.74,314.95c-41.98,0-70.23-35.61-70.23-35.61l145.89-2.28s-24.34,39.59-75.65,37.89ZM310.82,297.06c-11.74,0-21.25-8.95-21.25-20s9.51-20,21.25-20,21.25,8.95,21.25,20-9.51,20-21.25,20Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10"/>
+          <path d="M317.98,40.16s-16.22,2.6-34.99-6.98C267.67,25.36,248.75.84,248.75.84c0,0-22.51,31.74-41.96,39.81-10.18,4.22-29.64,4.37-29.64,4.37,0,0-11.04,41.94,8.51,94.76,7.05,19.04,40.05,54.35,60.36,54.35,29.62,0,53.64-35.87,63.48-55.7,22.81-45.98,8.48-98.26,8.48-98.26ZM298.51,80.58c-30.24,18.13-66.8,59.48-66.8,59.48,0,0-9.82-9.99-21.67-20.18-6.35-5.46-7.18-11.16-4.66-13.49,2.71-2.51,6.01-2.54,9.12-1.08,4.47,2.1,15.9,14.51,15.9,14.51,0,0,37.19-44.72,61.39-52.68,3.27-1.08,8.58-2.15,11.17,1.64,2.84,4.16.65,8.74-4.46,11.8Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10"/>
+        </svg>
+      </div>
+      <h3>Advanced Safety</h3>
+      <p>
+        Safety in AstraQ vehicles is built to feel intelligent, not intrusive. With advanced protective systems and responsive technology working in the background, drivers can enjoy a greater sense of security, confidence, and peace of mind on every journey.
+      </p>
+      <a href="#" class="featureLink">Learn More</a>
+    </article>
+
+    <article class="featureCard featureCard--nav">
+      <div class="featureIcon" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474.61 405.48" aria-hidden="true">
+  <path d="M415.11,0C396.6,0,381.61,14.76,381.61,32.96s29.06,52.04,33.5,52.04c4.87,0,33.5-33.84,33.5-52.04S433.61,0,415.11,0ZM415.11,47.28c-7.03,0-12.73-5.61-12.73-12.52s5.7-12.52,12.73-12.52,12.73,5.61,12.73,12.52-5.7,12.52-12.73,12.52Z" fill="currentColor"/>
+  <path d="M352.67,256.18c-7.15-14.31-20.66-20.76-28.64-34.96-8.24-14.66-31.95-69.37-41.86-77.28-8.71-6.95-55.38-9.48-74.06-10.23-38.02-1.52-100.16,4.49-100.16,4.49,0,0-28.07.95-32.95,6.26-15.94,17.37-27.82,58.19-39.81,75.96-7.67,11.37-28.96,28.12-33.63,43.36-4.09,13.33,4.86,47.81,4.86,66.79,0,22.06-5.4,62.24,3.59,71.24,3.27,3.27,38.18,4.2,41.56.04,5.21-6.42,4.3-32.76,4.3-32.76,0,0,73.86,3.91,134.36,3.91,28.5,0,111.9-4.74,111.9-4.74,0,0-2.37,28.57,4.16,33.49,5.88,4.43,41.11,5.3,44.9-3.64,3.37-7.95,2.98-30.59,1.66-51.68-3-48.04,11.6-66.66-.19-90.24ZM89.03,160.74c6.88-5.89,67.39-9.1,90.32-9.31,22.01-.2,81.82,3.88,89.07,9.01,7.6,5.38,24.02,46.71,24.02,46.71,0,0-85.13-3.66-113.52-3.54-28.44.11-113.66,4.46-113.66,4.46,0,0,15.83-40.53,23.76-47.32ZM47.32,293.55c-11.74,0-21.25-8.95-21.25-20s9.51-20,21.25-20,21.25,8.95,21.25,20-9.51,20-21.25,20ZM176.74,312.06c-41.98,0-70.23-35.61-70.23-35.61l145.89-2.28s-24.34,39.59-75.65,37.89ZM310.82,294.17c-11.74,0-21.25-8.95-21.25-20s9.51-20,21.25-20,21.25,8.95,21.25,20-9.51,20-21.25,20Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10"/>
+  <path d="M322.64,189.11c40.36-1.98,60.96-.41,94.91-.41,12.47,0,19.16.06,30.18-5.76,13.81-7.29,19.4-25.93,15.82-37.87-2.97-9.91-9.7-16.1-18.95-20.75-8.38-4.22-13.68-3.82-27.9-3.82-42.03,0-83.93,4.1-111.79-.39-5.42-.87-14.06-2.82-21.19-6.63-7.13-3.81-10.81-9.94-13.73-21.71-2.91-11.75-.64-16.72,9.33-31.44,4.21-6.21,28.4-8.47,44.5-8.47s34.18-.56,49.69.31" fill="none" stroke="currentColor" stroke-dasharray="30 30" stroke-linecap="round" stroke-miterlimit="10" stroke-width="20"/>
+</svg>
+      </div>
+      <h3>Intelligent Navigation</h3>
+      <p>
+        AstraQ’s navigation technology is designed to make every route feel effortless. From destination guidance to real-time positioning and smarter directional awareness, it helps drivers move with clarity, precision, and a stronger sense of control.
+      </p>
+      <a href="#" class="featureLink">Learn More</a>
+    </article>
+  </div>
+</section>
+
+<!-----------------------------------------------------
+       Reviews
+------------------------------------------------------->
+<section class="reviewWrapper">
+  <p class="reviewEyebrow"></p>
+  <h2>What Our Customers Say</h2>
+  <p class="reviewIntro">
+    Explore what guests are saying about the experience, service, innovation, and luxury behind AstraQ.
+  </p>
+
+  <div id="cardsVisible" class="reviewGrid"></div>
+
+  <div class="reviewsCollapse" id="reviewsCollapse">
+    <div id="cardsHidden" class="reviewGrid"></div>
+    <div class="reviewsFade"></div>
+  </div>
+
+  <div class="reviewsToggleWrap">
+    <button class="reviewsToggle" id="reviewsToggle" type="button" aria-expanded="false">
+      See more reviews <span class="carrot">▾</span>
+    </button>
+  </div>
+</section>
+
+
+<!-- <img src="images/favicon.png" alt="logo" width="40" height="40" class="footerLogo">-->
+<div id="footerWrapper">
+  <footer class="footer">
+
+    <section class="footerCol contact">
+      <h4>Contact</h4>
+    <p><ion-icon name="person-outline"></ion-icon>Joshua Quvivic</p>
+<p><ion-icon name="business-outline"></ion-icon>AstraQ Auto Dealer</p>
+      <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:autodealerg@astraq.com">autodealer@astraq.com</a></p>
+      <p><ion-icon name="globe-outline"></ion-icon><a href="https://astraq.com">astraq.com</a></p>
+      <p><ion-icon name="call-outline"></ion-icon><a href="tel:555555555">555-657-5643</a></p>
+    </section>
+
+    <section class="footerCol social">
+      <h4>Follow</h4>
+      <div class="socialRow">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+
+    </section>
+
+    <section class="footerCol location">
+      <h4>Location</h4>
+      <address>
+        128 Via della Notte<br>
+        Los Angeles, CA<br>
+      </address>
+    
+      <p class="hours">
+        Mon–Thu 5–10pm<br>
+        Fri–Sat 5–11pm<br>
+        Sun Closed
+      </p>
+    </section>
+
+    <div class="footerBottom">
+      <p class="legal">&copy; <span id="year">x</span> • Savannah Longmore</p>
+      <div class="fineLinks">
+        <a href="#">Privacy</a>
+        <span>•</span>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+</div>
+    <script type="module" src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

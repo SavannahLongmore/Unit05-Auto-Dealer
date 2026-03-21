@@ -1,0 +1,376 @@
+header,
+nav,
+main,
+footer {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+
+    .logo {
+      width: 45px;
+      height: auto;
+      display: block;
+    }
+
+    .phone {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .phone-text {
+      display: block;
+      color: rgb(255, 255, 255);
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .phone-icon {
+      display: none;
+    }
+  }
+
+  #navWrapper {
+    padding: 1.1rem 0 1.35rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(5, 8, 16, 0.68),
+      rgba(5, 8, 16, 0.18)
+    );
+  }
+
+  #navWrapper nav {
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.15rem;
+    margin: 0;
+    padding: 0 0 1rem;
+    list-style: none;
+  }
+
+  nav li {
+    flex: none;
+  }
+
+  nav a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.85rem 1.45rem;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.84rem;
+    letter-spacing: 0.18em;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.035),
+      0 10px 24px rgba(0, 0, 0, 0.14);
+    transition:
+      color 0.28s ease,
+      background 0.28s ease,
+      border-color 0.28s ease,
+      transform 0.28s ease,
+      box-shadow 0.28s ease;
+  }
+
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.8rem;
+    width: 58%;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    );
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.28s ease;
+  }
+
+  nav a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.14);
+    transform: translateY(-1px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.05),
+      0 14px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  nav li.active a {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  nav li.active a::after,
+  nav a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  #navWrapper::after {
+    content: "";
+    display: block;
+    max-width: 72rem;
+    margin: 0 auto;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.11) 18%,
+      rgba(255, 255, 255, 0.11) 82%,
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .track {
+    grid-auto-columns: calc((100% - 48px) / 3);
+    gap: 24px;
+  }
+
+  .slide {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.12) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .cardContent {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .carousel3 .arrow {
+    width: 46px;
+    height: 46px;
+    font-size: 26px;
+  }
+
+  .carousel3 .arrow.left {
+    left: 14px;
+  }
+
+  .carousel3 .arrow.right {
+    right: 14px;
+  }
+
+  .featureSplit {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    align-items: stretch;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  }
+
+  .featureImage {
+    height: 520px;
+    border-radius: 0;
+  }
+
+  .featureImage::after {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 55%
+    );
+  }
+
+  .featureMobile {
+    display: none;
+  }
+
+  .featurePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 56px 52px;
+    text-align: center;
+    background: #1c1a19;
+    color: #eae6e3;
+  }
+
+  .featurePanel h2 {
+    margin: 0;
+    letter-spacing: 6px;
+    font-weight: 500;
+    font-size: 2.1rem;
+  }
+
+  .featurePanel p {
+    margin: 0 auto;
+    max-width: 40ch;
+    line-height: 1.7;
+    opacity: 0.92;
+    font-size: 1.05rem;
+  }
+
+  .featurePanel a {
+    align-self: center;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1.5px solid #eae6e3;
+    color: #eae6e3;
+    text-decoration: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.25s ease;
+  }
+
+  .featurePanel a:hover {
+    background: #eae6e3;
+    color: #1c1a19;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+  }
+
+  .hero {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 2;
+    min-height: 420px;
+  }
+
+  .footer {
+    grid-template-columns: 1.2fr 1fr 1.1fr;
+    align-items: start;
+    gap: 80px;
+  }
+
+  .footerCol.social {
+    align-items: center;
+    text-align: center;
+  }
+
+  .socialRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 18px 0 20px;
+  }
+
+  .socialRow a {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease;
+  }
+
+  .socialRow ion-icon {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .socialRow a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.45);
+    transform: translateY(-2px);
+  }
+
+  .footerCta {
+    margin: 0 auto;
+  }
+
+  .footerCol.location {
+    justify-self: end;
+    text-align: left;
+    max-width: 30ch;
+  }
+
+  .footerCol.contact {
+    justify-self: start;
+    max-width: 34ch;
+  }
+
+  .footerBottom {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carousel3 {
+    width: 100%;
+  }
+
+  .carousel3 .track {
+    grid-auto-columns: calc((100% - 48px) / 3);
+    gap: 24px;
+  }
+
+  .carousel3 .slide {
+    height: 460px;
+  }
+
+  .carousel3 .slide img {
+    height: 55%;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+
+  .carousel3 .cardContent {
+    padding: 22px;
+  }
+}
