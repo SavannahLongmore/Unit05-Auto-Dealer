@@ -184,7 +184,17 @@ it's for the menu button*/
 /* =========================================
    HEADER
    ========================================= */
-header {
+header .logo {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+   header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
