@@ -953,6 +953,30 @@ h2 {
   transform: translateX(3px);
 }
 
+/* Fix for external SVG images inside featureIcon */
+.featureIcon img {
+  width: 68%;
+  height: 68%;
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* Color change on hover using CSS filter */
+.featureCard--safety .featureIcon img {
+  filter: brightness(1.1);
+}
+
+.featureCard--safety:hover .featureIcon img {
+  filter: invert(42%) sepia(85%) saturate(450%) hue-rotate(185deg) brightness(115%) contrast(110%);
+  transform: scale(1.08);
+}
+
+/* Optional glow */
+.featureCard--safety:hover .featureIcon img {
+  filter: invert(42%) sepia(85%) saturate(450%) hue-rotate(185deg) brightness(115%) contrast(110%) drop-shadow(0 0 12px rgba(110, 209, 255, 0.6));
+}
+
 /* =========================================
 Reviews
    ========================================= */
