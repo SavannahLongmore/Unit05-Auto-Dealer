@@ -318,7 +318,7 @@ header .logo {
 
 .heroOverlay h1 {
   margin: 0 0 1rem;
-  color: #fff;
+  color: #ffffff;
   text-align: left;
   font-size: clamp(2.8rem, 6vw, 5.4rem);
   line-height: 0.92;
@@ -329,7 +329,7 @@ header .logo {
 .heroText {
   margin: 0 0 1.5rem;
   max-width: 30ch;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgb(255, 255, 255);
   font-size: clamp(1rem, 1.4vw, 1.15rem);
   line-height: 1.7;
   text-transform: none;
